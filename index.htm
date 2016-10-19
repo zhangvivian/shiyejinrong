@@ -1,0 +1,685 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>视野金融</title>
+        <meta charset="utf-8" />
+		<link href="css/bootstrap.css" tppabs="http://www.shiyejinrong.com/css/bootstrap.css" rel='stylesheet' type='text/css' />
+         <link rel="stylesheet" href="css/style.css" tppabs="http://www.shiyejinrong.com/css/style.css" media="screen" type="text/css" />
+         
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		
+		
+		<meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
+		<meta name="keywords" content="视野, 大智慧, 炒股, 金融, 资讯,金融资讯,图表, 可视化, 大数据, 万得" />
+		
+		<link rel="stylesheet" type="text/css" href="css/default.css" tppabs="http://www.shiyejinrong.com/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" tppabs="http://www.shiyejinrong.com/css/component.css" />
+		<script src="js/modernizr.custom.js" tppabs="http://www.shiyejinrong.com/js/modernizr.custom.js"></script>
+         
+         
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		 <script src="js/jquery.min.js" tppabs="http://www.shiyejinrong.com/js/jquery.min.js"></script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js" tppabs="http://www.shiyejinrong.com/js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js" tppabs="http://www.shiyejinrong.com/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" tppabs="http://www.shiyejinrong.com/css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----font-Awesome----->
+   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css" tppabs="http://www.shiyejinrong.com/fonts/css/font-awesome.min.css">
+   		<!----font-Awesome----->
+		<!----webfonts---->
+		<!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>-->
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body  onload="$('.md-trigger')[0].click();">
+    <div class="md-modal md-effect-6" id="modal-6">
+			<div class="md-content">
+				<h3>手机客户端下载</h3>
+				<div>
+					<p>若用微信扫码需<strong>点右上角菜单选择浏览器方式</strong>打开或使用其他扫码软件(北京视野金融信息服务有限公司)</p>
+					
+                    <img src="images/erwei.png" tppabs="http://www.shiyejinrong.com/images/erwei.png" />
+                    
+					<button class="md-close">Close</button>
+				</div>
+			</div>
+ 		</div>
+
+ 		<!----start-container------>
+		<!----start-header---->
+		<div id="home" class="header scroll">
+			<div class="container">
+				<!---- start-logo---->
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" tppabs="http://www.shiyejinrong.com/images/logo.png" title="Blue agency" /></a>
+				</div>
+				<!---- //End-logo---->
+				<!----start-top-nav---->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">视野金融</a></li>
+						<li class="page-scroll"><a href="#about" class="scroll">应用简介</a></li>
+						<li class="page-scroll"><a href="#services" class="scroll">服务对象</a></li>
+						<li class="page-scroll"><a href="#port" class="scroll">热门功能</a></li>
+						<li class="page-scroll"><a href="#team" class="scroll">支持单位</a></li>
+						<li class="page-scroll"><a href="#blog" class="scroll">入驻专栏</a></li>
+						<li class="page-scroll"><a href="#contact" class="scroll">联系我们</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" tppabs="http://www.shiyejinrong.com/images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+				<!----//End-top-nav---->
+			</div>
+		</div>
+		<!----//End-header---->
+		<!-----start-slider---->
+		<div class="slider">
+			<script src="js/responsiveslides.min.js" tppabs="http://www.shiyejinrong.com/js/responsiveslides.min.js"></script>
+			  <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 3
+			      $("#slider3").responsiveSlides({
+			        manualControls: '#slider3-pager',
+			      });
+			    });
+			  </script>
+			  	<!-- Slideshow -->
+			    <ul class="rslides" id="slider3">
+			      <li>
+			      	<img src="images/slider-img1.jpg" tppabs="http://www.shiyejinrong.com/images/slider-img1.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>视野相伴，起点已在高处</h1>
+			      		<p>高度决定视野、角度改变观念，同样的投资，不一样的体验，同样的世界，不一样的感悟!</p>
+			      		<button class="md-trigger" data-modal="modal-6">立即试用</button>
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img2.jpg" tppabs="http://www.shiyejinrong.com/images/slider-img2.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>智慧视野，岂止于资讯</h1>
+			      		<p>步步为赢，市场全景扫描，公司、行业、宏观、全球、研报、热点、头条、专栏、公告、新闻、数据、分析...</p>
+			      		<button class="md-trigger" data-modal="modal-6">立即试用</button>
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img3.jpg" tppabs="http://www.shiyejinrong.com/images/slider-img3.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>迎接未来，专业让投资变简单</h1>
+			      		<p>无论您是金融英才、中产阶级还是财富新贵，视野让您有更多的精力，追求事业的进取，回归家庭，而不必为投资资讯苦恼.</p>
+			      		<button class="md-trigger" data-modal="modal-6">立即试用</button>
+			      	</div>
+			      </li>
+			    </ul>
+			    <!-- Slideshow -->
+			    <ul id="slider3-pager">
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			    </ul>
+		   </div>
+		<!-----//End-slider---->
+		<!----start-about----->
+		<div id="about" class="about">
+			<div class="container">
+				<h2>应用简介</h2>
+				<p class="wellcome-note-head"><label>视野是一款为专业投资者服务的免费财经资讯. </label>金融从业必备应用,<span>可视化、</span><span>易用、</span><span>专业,</span> 多位业界大佬倾力推荐</p>
+				<p class="wellcome-note-info">应用端提供给用户几乎包含金融方面所有的数据及资讯，你可以用视野一站式了解个股行情，公司财务，估值,也能全面<br/>了解行业的数据，财务，也能自主做公司对比，资料查询；对于资讯，我们这里有最全，最热，最优质的金融资讯，最快<br/>最精准的研报，公告和政策法规；你可以用视野管理你的文档，分享你的观点；总之在这里你会找到你的归宿.</p>
+			<!----start-about-grids----->
+			<div class="about-grids">
+				<div class="col-md-3 about-grid">
+					<span class="about-icon"> </span>
+					<h3><a href="#"><label>海量</label> 数据</a></h3>
+					<p>宏观数据、政策法规、行业数据、公司财务、行业财务、PE、EV/EBITDA、ROE、EPS、业绩信息、盈利信息、现金流分析、资本结构、股权分析、同行业对比、相关公司对比、历史数据、LTM数据等，与国内最权威的产业及财经数据库7*24小时实时对接.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon1"> </span>
+					<h3><a href="#"><label>精选</label> 资讯</a></h3>
+					<p>市场行情、重大动态、市场动态、最新公告、热点事件、今日头条、研究报告、公司新闻、行业新闻、IPO新闻、名家专栏，利用视野的先进算法、数据抓取、文本挖掘技术以及海量信息的分析能力对资讯进行挖掘、处理以及个性化推送.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon2"> </span>
+					<h3><a href="#"><label>交流</label> 社交</a></h3>
+					<p>会议室为用户提供了阐述财经热点、新闻、数据观点的专业沟通平台，闲来没事八卦唠嗑就到楼梯口。有爆料消息或数据发现还等什么，快来和你的小伙伴一起讨论！当然我们给你评论和分享的权利.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon3"> </span>
+					<h3><a href="#"><label>我的</label> 视野</a></h3>
+					<p>用户可以添加自选、管理自选、添加行业、管理行业，对关注公司及关注行业的数据进行实时监控，并可及时了解宏观市场变动，订阅后可在第一时间得到变动的推送通知。未来视野还将为用户提供资产配置、资产监控、互动交流、社区讨论等功能.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+			<!----//End-about-grids----->
+		</div>
+		<!----//End-about----->
+		<!----start-services---->
+		<div id="services" class="services">
+			<div class="container">
+				<h3>服务对象<label> </label></h3>
+			<!----start-servicves-list---->
+			<div class="services-list text-center">
+				<ul class="list-unstyled list-inline">
+					<li>
+						<a><span class="service-icon"> </span></a>
+					</li>
+					<li>
+						<a><span class="service-icon1"> </span></a>
+					</li>
+					<li>
+						<a><span class="service-icon2"> </span></a>
+					</li>
+					<li>
+						<a><span class="service-icon3"> </span></a>
+					</li>
+					<li>
+						<a><span class="service-icon4"> </span></a>
+					</li>
+					<li>
+						<a><span class="service-icon5"> </span></a>
+					</li>
+					<li>
+						<a><span class="service-icon6"> </span></a>
+					</li>
+				</ul>
+			</div>
+			<!----//End-servicves-list---->
+			</div>
+		</div>
+        <div class="copyrights">Collect from <a href="javascript:if(confirm('http://www.cssmoban.com/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.cssmoban.com/'" tppabs="http://www.cssmoban.com/"  title="???3/4?￡°?">???3/4?￡°?</a></div>
+		<!----//End-services---->
+		<!----start-portfolio----->
+		<div id="port" class="portfolio portfolio-box">
+			<div class="container">
+				<h3>热门功能<label> </label></h3>
+			<!----start-portfolio---->
+         <div id="port" class="container portfolio-main">
+	        	<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js" tppabs="http://www.shiyejinrong.com/js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+								
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});				
+								
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								
+								}
+					
+							};
+							// Run the show!
+							filterList.init();
+						});	
+					</script>
+					<!----//End-portfolio-script---
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span> /</li>
+						<li><span class="filter" data-filter="app">DESIGN</span> /</li>
+						<li><span class="filter" data-filter="card">PHOTOGRAPHY</span> /</li>
+						<li><span class="filter" data-filter="icon">VIDEO</span> /</li>
+						<li><span class="filter" data-filter="app">PRINT</span></li>
+					</ul>-->
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" tppabs="http://www.shiyejinrong.com/images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#"> 实时股价</a></h4>
+		    
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" tppabs="http://www.shiyejinrong.com/images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">公司对比</a></h4>
+		                </div>
+					</div>		
+					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p3.jpg" tppabs="http://www.shiyejinrong.com/images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#">行业对比</a></h4>
+		                	
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p4.jpg" tppabs="http://www.shiyejinrong.com/images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> A股市场</a></h4>
+		                	
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p5.jpg" tppabs="http://www.shiyejinrong.com/images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">中国经济</a></h4>
+		                	
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p7.jpg" tppabs="http://www.shiyejinrong.com/images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">今日头条</a></h4>
+		                	
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p6.jpg" tppabs="http://www.shiyejinrong.com/images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">热点事件</a></h4>
+		                	
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p8.jpg" tppabs="http://www.shiyejinrong.com/images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">我的空间</a></h4>
+		                	
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p9.jpg" tppabs="http://www.shiyejinrong.com/images/p9.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" tppabs="http://www.shiyejinrong.com/images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> 行业数据</a></h4>
+		                	
+		                </div>
+					</div>
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>																																				
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+         <!----//End-portfolio---->
+         <!-----start-testmonials---->
+         <div class="testmonials">
+         	<div class="container">
+	         	<div  id="wesay" class="client-pic col-md-4">
+	         		<img src="images/client.jpg" tppabs="http://www.shiyejinrong.com/images/client.jpg" title="name" />
+	         	</div>
+	         	<div class="client-sys col-md-8">
+	         		<!----start-testmonial-slider---->
+	         		<link rel="stylesheet" href="css/testmonial.css" tppabs="http://www.shiyejinrong.com/css/testmonial.css">
+  					<script src="js/prefixfree.min.js" tppabs="http://www.shiyejinrong.com/js/prefixfree.min.js"></script>
+	         		<!----//End-testmonial-slider---->
+	         		<div class="gallery autoplay items-3">
+					    <div id="item-1" class="control-operator"></div>
+					    <div id="item-2" class="control-operator"></div>
+					    <div id="item-3" class="control-operator"></div>
+					    <figure class="item">
+                        
+					      <h3>视野说:</h3>
+                          
+					      <p class="client-says">我们是一个面向专业金融财经人士的财经资讯数据的云服务应用，能够聚合浏览、创作发布和管理财经数据资讯，解决专业数据资源与个人工作需求的矛盾，视野的优势在于工具性、媒体性、服务性的高度统一; </p>
+					    </figure>
+                          
+					    <figure class="item">
+					      <h3>视野说 :</h3>
+					     <p class="client-says">我们是以“服务和用户体验”为本，以“专属定制的资讯服务”为切入点，未来期望提供金融大数据分析、个人资产管理、企业资产管理、财务顾问等一系列互联网金融增值服务；</p>
+					    </figure>
+					    <figure class="item">
+					      <h3>视野说:</h3>
+					      <p class="client-says">我们不（you）一（ke）定（neng）是最安全，最易用，最高效，最懂您的金融服务应用，但是我们一定是最努力去做的那个.</p>
+					    </figure>
+					    <div class="clearfix"> </div>
+					    <div class="controls">
+					      <a href="#item-1" class="control-button"><span> </span></a>
+					      <a href="#item-2" class="control-button"><span> </span></a>
+					      <a href="#item-3" class="control-button"><span> </span></a>
+					    </div>
+					    <div class="clearfix"> </div>
+				  </div>
+	         	</div>
+	         	<div class="clearfix"> </div>
+         	 </div>
+         </div>
+          <!-----//End-testmonials---->
+		<!----//End-portfolio----->
+		<!-----start-team----->
+		<div id="team" class="team">
+			<div class="container">
+				<div class="team-members text-center">
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="javascript:if(confirm('http://www.cei.gov.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.cei.gov.cn/'" tppabs="http://www.cei.gov.cn/"><img src="images/t1.jpg" tppabs="http://www.shiyejinrong.com/images/t1.jpg" title="member-name" /></a>
+						<h3><a href="javascript:if(confirm('http://www.cei.gov.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.cei.gov.cn/'" tppabs="http://www.cei.gov.cn/">中国经济信息网</a></h3>
+						<span>CEIdata</span>
+						<p>    中经网数据有限公司(简称“中经网公司”)，是国家信息中心控股的有限责任公司，成立于1996年6月，是国内核心的经济信息综合服务商 .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href=""><img src="images/xinlang.png" tppabs="http://www.shiyejinrong.com/images/xinlang.png"></a></li>
+							<li><a href="javascript:if(confirm('http://www.cei.gov.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.cei.gov.cn/'" tppabs="http://www.cei.gov.cn/"><img src="images/wangye.png" tppabs="http://www.shiyejinrong.com/images/wangye.png"></a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="javascript:if(confirm('http://www.cninfo.com.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.cninfo.com.cn/'" tppabs="http://www.cninfo.com.cn/"><img src="images/t2.jpg" tppabs="http://www.shiyejinrong.com/images/t2.jpg" title="member-name" /></a>
+						<h3><a href="javascript:if(confirm('http://www.cninfo.com.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.cninfo.com.cn/'" tppabs="http://www.cninfo.com.cn/">巨潮资讯网</a></h3>
+					  <span>CNInfo</span>
+						<p>巨潮资讯网是证监会指定的上市公司信息披露网站，创建于1995年，是国内最早的证券信息专业网站，国内首家全面披露深沪上市公司公告、市场数据的证券专业网站 .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href="javascript:if(confirm('http://weibo.com/p/1006062239792910/home?from=page_100606&mod=TAB  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://weibo.com/p/1006062239792910/home?from=page_100606&mod=TAB#place'" tppabs="http://weibo.com/p/1006062239792910/home?from=page_100606&mod=TAB#place"><img src="images/xinlang.png" tppabs="http://www.shiyejinrong.com/images/xinlang.png"></a></li>
+							<li><a href="javascript:if(confirm('http://www.cninfo.com.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.cninfo.com.cn/'" tppabs="http://www.cninfo.com.cn/"><img src="images/wangye.png" tppabs="http://www.shiyejinrong.com/images/wangye.png"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="javascript:if(confirm('http://www.hdfsd.gov.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.hdfsd.gov.cn/'" tppabs="http://www.hdfsd.gov.cn/"><img src="images/t3.jpg" tppabs="http://www.shiyejinrong.com/images/t3.jpg" title="member-name" /></a>
+						<h3><a href="javascript:if(confirm('http://www.hdfsd.gov.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.hdfsd.gov.cn/'" tppabs="http://www.hdfsd.gov.cn/">海淀区金融服务办公室</a></h3>
+						<span>HDFSD</span>
+					    <p>北京市海淀区金融服务办公室负责研究分析金融市场发展规律，及时掌握有关信息，协调推进本区金融功能区和后台服务园区的建设和发展.</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href=""><img src="images/xinlang.png" tppabs="http://www.shiyejinrong.com/images/xinlang.png"></a></li>
+							<li><a href="javascript:if(confirm('http://www.hdfsd.gov.cn/  \n\n该文件未被 Teleport Pro 下载，因为 它位于起始地址以设置的边界以外的域或路径中。  \n\n你想要从服务器打开它吗?'))window.location='http://www.hdfsd.gov.cn/'" tppabs="http://www.hdfsd.gov.cn/"><img src="images/wangye.png" tppabs="http://www.shiyejinrong.com/images/wangye.png"></a></li>
+						</ul>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<!-----//End-team----->
+		<!-----start-brand-carsuals------>
+		<script type="text/javascript" src="js/jquery.flexisel.js" tppabs="http://www.shiyejinrong.com/js/jquery.flexisel.js"></script>
+		<!--<div class="brand-carsuals">
+			<ul id="flexiselDemo3">
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>                                                 
+			</ul>   
+			<script type="text/javascript">
+				$(window).load(function() {
+				    $("#flexiselDemo3").flexisel({
+				        visibleItems: 5,
+				        animationSpeed: 1000,
+				        autoPlay: true,
+				        autoPlaySpeed: 3000,            
+				        pauseOnHover: true,
+				        enableResponsiveBreakpoints: true,
+				        responsiveBreakpoints: { 
+				            portrait: { 
+				                changePoint:480,
+				                visibleItems: 1
+				            }, 
+				            landscape: { 
+				                changePoint:640,
+				                visibleItems: 2
+				            },
+				            tablet: { 
+				                changePoint:768,
+				                visibleItems: 3
+				            }
+				        }
+				    });
+				    
+				});
+			</script>
+		</div>
+		<!-----//End-brand-carsuals------>
+		<!----start-blog---->
+		<div id="blog" class="blog">
+			<div class="container">
+				<h3>入驻专栏<label> </label></h3>
+				<div class="blog-grids">
+					<div class="col-md-4 blog-grid-row frist-row">
+						<a class="post-pic" href="#"><img src="images/post-pic.jpg" tppabs="http://www.shiyejinrong.com/images/post-pic.jpg" title="pic-name" /></a>
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head">
+								<div class="post-head-left">
+									<h4><a href="#">视野名家专栏</a></h4>
+								</div>
+								<div class="post-head-right">
+									
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">视野名家专栏，致力打造财经行业最专业、最有深度的专栏作者平台，聚集经济学家、财经媒体人、行业研究团队、行业协会、学者、记者、律师、专栏作家等行业领先人物的精彩观点，热点文章。诚邀您的加入.</p>
+							
+						</div>
+						<!----//End-artical-info---->
+					</div>
+					<!---->
+					<div class="col-md-4 artical-row2">
+						<!----start-artical-info---->
+					  <div class="artical-info">
+						<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">资本实验室</a></h4>
+						  </div>
+								<div class="post-head-right post-head-right-C ">
+                                
+                                
+									<a href="#"><img src="images/ziben.png" tppabs="http://www.shiyejinrong.com/images/ziben.png"></a>
+								</div>
+								<div class="clearfix"> </div>
+						  </div>
+						  <p class="post-text">资本实验室创建于2011年8月，是一个新锐、多元、有趣的创业投资站点，关注创业投资领域的最新进展，探索纷繁背景下的商业趋势.看待商业，没有颠扑不破、百试不爽的真理和规范，资本实验室长期跟踪创业投资与并购领域发展。</p>
+							
+						</div>
+						<!----//End-artical-info---->
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+							  <div class="post-head-left">
+								<h4><a href="#">和君咨询</a></h4>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<a href="#"><img src="images/hejun.png" tppabs="http://www.shiyejinrong.com/images/hejun.png"></a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">和君咨询集团是中国本土规模最大的综合性咨询公司之一，长期深入企业的中国本土实践，深刻感受到企业成长过程中产品经营和资本经营良性互动的重要性，致力于为企业提供“管理咨询+投资银行”的双重专业服务。</p>
+						
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+					<!---->
+					<div class="col-md-4 artical-row2">
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">华丽志</a></h4>
+									
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<a href="#"><img src="images/hualizhi.png" tppabs="http://www.shiyejinrong.com/images/hualizhi.png"></a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">《华丽志》是中国时尚和奢侈品领域最有影响力的商业新媒体，跨界时尚、金融和互联网三大板块，源源不断地为高端人士及时提供全球最新、最有深度的资讯，还精心打造了一个内涵丰富的在线品牌知识库、行业研究资料库和时尚金融数据库.</p>
+							
+						</div>
+						<!----//End-artical-info---->
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">更多名家专栏</a></h4>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<a href="#"><img src="images/gengduo.png" tppabs="http://www.shiyejinrong.com/images/gengduo.png"></a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">同时入驻视野的还有很多其他很多个人名家专栏，如：高慧律师投行俱乐部
+，愉财经平台，和君咨询投行视野，易合广信，投行法律业务，全球企业动态，并购来例加等等，同时我们也期待更多的专栏作家入驻视野名家专栏平台！.</p>
+							
+						</div>
+						<!----//End-artical-info---->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!----//End-blog---->
+		<!----start-contact---->
+		<div id="contact" class="contact">
+			<div class="container">
+				 <h3>联系我们<label> </label></h3>
+				<div class="contact-grids">
+					<div class="col-md-6 contact-grid-left">
+                                         
+						<form action="http:///service@shiyedata.com"  enctype="text/plain" accept-charset="utf-8">
+							<input name="exuser" type="text" value="姓名" onFocus="if(this.value == '姓名') {this.value='';}" onBlur="if (this.value == '') {this.value = '姓名';}">
+							<!--<input type="text" value="邮箱" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}">-->
+							<input name="subject" type="text" value="主题" onFocus="if(this.value == '主题') {this.value='';}" onBlur="if (this.value == '') {this.value = '主题';}">
+							<textarea name="body" onFocus="if(this.value == '您的邮件正文....') {this.value='';}" onBlur="if(this.value == '') {this.value='您的邮件正文....';}">您的邮件正文....</textarea>
+							<p class="conditions"> <span>*</span>欢迎随时联系我们.</p>
+							<span class="submit-btn"><input type="submit" value="Send"></span>
+						</form>
+					</div>
+					<!----->
+					<div class="col-md-6 contact-grid-right">
+						<iframe> </iframe>
+						<p>我们致力成为中国最有良心的金融资讯、信息、数据服务商.</p>
+						<div class="col-md-4">
+							<h5>Phone:</h5>
+							<span>010-58731588</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Address:</h5>
+							<span>北京市 </span>
+							<span>海淀区 </span>
+							<span>知春路盈都大厦C座4单元7E</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Email:</h5>
+							<span><a href="mailto:service@shiyedata.com">service@shiyedata.com</a></span>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-----start-contact-social---->
+				
+				<!-----//End-contact-social---->
+		</div>
+		</div>
+		<!----//End-contact---->
+		<!----start-copy-right--->
+		<div class="copy-right">
+			<div class="container">
+				<p>Copyright &copy; 北京视野金融信息服务有限公司.</p>
+					<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!----//End-copy-right--->
+		<!----//End-container------>
+<div class="md-overlay"></div><!-- the overlay element -->
+
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js" tppabs="http://www.shiyejinrong.com/js/classie.js"></script>
+		<script src="js/modalEffects.js" tppabs="http://www.shiyejinrong.com/js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js" tppabs="http://www.shiyejinrong.com/js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js" tppabs="http://www.shiyejinrong.com/js/css-filters-polyfill.js"></script>
+         <script src="js/index.js" tppabs="http://www.shiyejinrong.com/js/index.js"></script>
+</body>
+</html>
